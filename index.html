@@ -334,6 +334,8 @@
     // puts piece in bottom-most location
     function bottom() {
       current.y = current.ghostY;
+      invalidate();
+      drop();
     }
 
     function dropPiece() {
